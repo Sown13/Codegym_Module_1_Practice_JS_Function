@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="ấn cái này này" onclick="checkStar()">
+<p>   arrStar1 = [ arrStar1[0],arrStar1[1],arrStar1[2],arrStar1[3]];
+
+<p>   arrStar2 = [ arrStar2[0],arrStar2[1],arrStar2[2],arrStar2[3]];
+    arrStar2[index cua thang 1]=
+
+
+</p>
+</body>
+<script>
+    //    function addOne(a) {
+    //        return a += 1;
+    //    }
+    // let b = parseInt(prompt("nhap 1 so"));
+    //    document.write(addOne(b));
+    //    console.log(addOne(b))
+
+    // function compare(a,b){
+    //     let c = a+b;
+    //     if ( a<=b){ alert(c);
+    //     } else {alert(`so thu nhat lon hon so thu 2`)}
+    // }
+
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert(result)
+    // result = addNumbers();
+    // alert(result)
+    let arrStar1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arrStar2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    document.write("<br> arr=[" + arrStar1 + "]<br>");
+    document.write("arr=[" + arrStar2 + "]");
+
+    function checkStar() {
+        let index, checker,a;
+        a = prompt("nhập tên ngôi sao bạn cần tìm chòm sao");
+        for (let i = 0; i < arrStar1.length; i++) {
+            if (a === arrStar1[i]) {
+                checker = true;
+                index = i;
+                break;
+            } else {
+                checker = false
+            }
+        }
+        console.log(checker)
+        if (checker === false) {
+            alert("khong co chom sao nay")
+        } else {
+            let c = arrStar2[index];
+            alert(c)
+        }
+    }
+    // function checkStar() {
+    //     let index, checker;
+    //     checker = 1;
+    //     a = prompt("nhập tên ngôi sao bạn cần tìm chòm sao");
+    //     for (let i = 0; i < arrStar1.length; i++) {
+    //         if (a === arrStar1[i]){
+    //             checker = 1;
+    //             index = i;
+    //         }
+    //         let c = arrStar2[index];
+    //         alert(c)
+    //     } alert('khong co ngoi sao nay');
+    // }
+
+// alert('khong co ngoi sao nay')
+</script>
+</html>

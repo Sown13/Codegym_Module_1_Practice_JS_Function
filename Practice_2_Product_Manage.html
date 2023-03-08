@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm bán hàng</title>
+    <style>
+        table, tr, td, th {
+            border: 1px solid;
+            padding: 0;
+            border-spacing: 0;
+            margin:0;
+        }
+        body {
+            background-image: url("bg.png");
+        }
+        table{
+            background-image: url("bg_table.png");
+        }
+    </style>
+</head>
+<body>
+<h1 style="text-align: center; font-size: 50px"> CHƯƠNG TRÌNH QUẢN LÝ SẢN PHẨM </h1>
+<hr>
+<table style="width: 100%">
+    <tr class="mainTable" style="text-align: center;font-size: 30px">
+        <th class="mainTable" style="width: 300px"> Manage Menu</th>
+        <th> Product List</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="text-align: center">
+            <input type="text" id="searchItem" placeholder="search for item" style="width: 500px">
+            <input type="button" value="Search" onclick="searchItem()">
+        </td>
+    </tr>
+    <tr style="vertical-align: top">
+        <td style="height: 500px; vertical-align: top">
+            <input type="text" id="inputItem" placeholder="Nhập sản phẩm muốn thêm" style="width: 290px">
+            <br>
+            <input type="button" value="THÊM SẢN PHẨM" onclick="addItem()">
+        </td>
+        <td style="text-align: left;vertical-align: top">
+            <p id="listItem" style="margin:0"></p>
+        </td>
+    </tr>
+</table>
+</body>
+<script src="core_function_manage.js"></script>
+</html>
